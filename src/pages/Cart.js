@@ -41,7 +41,7 @@ const Cart = () => {
     useEffect(() =>{
       //類似於生命週期方法
       axios.get('/carts').then(res => setCarts( res.data));
-  });
+  },[]);
 
 
   const totalPrice =() =>{
